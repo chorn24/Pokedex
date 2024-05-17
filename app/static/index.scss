@@ -1,0 +1,410 @@
+:root {
+    --Normal: #b0aea2;
+    --Grass: #7bc45b;
+    --Fire: #e84a41;
+    --Water: #46a0f8;
+    --Fighting: #ae5640;
+    --Flying: #6e97ef;
+    --Poison: #a35994;
+    --Ground: #dab861;
+    --Rock: #bcae71;
+    --Bug: #b0be45;
+    --Ghost: #6e6dbd;
+    --Electric: #f7d051;
+    --Psychic: #ec5aa1;
+    --Ice: #82ddfa;
+    --Dragon: #8370ed;
+    --Dark: #855f52;
+    --Steel: #b3b2c4;
+    --Fairy: #e4a1e4;
+    --NormalD: #8d8b81;
+    --GrassD: #53853e;
+    --FireD: #a8342e;
+    --WaterD: #3173b4;
+    --FightingD: #723829;
+    --FlyingD: #465f96;
+    --PoisonD: #63355a;
+    --GroundD: #816d39;
+    --RockD: #706844;
+    --BugD: #606824;
+    --GhostD: #34335a;
+    --ElectricD: #7e6a28;
+    --PsychicD: #682746;
+    --IceD: #3e6a77;
+    --DragonD: #2d2652;
+    --DarkD: #553c34;
+    --SteelD: #9594a3;
+    --FairyD: #bb84bb;
+}
+
+.Background {
+    background-image: url("images/Pokepaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.PokedexBackground {
+    border: solid 3pt rgb(77, 15, 15);
+    background-color: rgb(151, 29, 29);
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 697pt;
+}
+
+.TopOfDex {
+    width: 100%;
+    height: 77pt;
+    border-bottom: rgb(139, 26, 26) solid 3pt;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.Camera {
+    background-color: rgb(104, 255, 255);
+    width: 50pt;
+    height: 50pt;
+    border-radius: 50pt;
+    border: rgb(197, 255, 255) solid 3pt;
+    margin-left: 25pt;
+}
+
+.CameraShine {
+    background-color: rgb(220, 255, 255);
+    width: 20pt;
+    height: 20pt;
+    border-radius: 20pt;
+    margin-top: 5pt;
+    margin-left: 3pt;
+}
+
+.TopSize1 {
+    width: 40%;
+    display: block;
+}
+
+.TopSize2 {
+    width: 60%;
+    display: block;
+}
+
+.InputPokemon {
+    background-color: rgb(15, 15, 15);
+    width: 75%;
+    font-size:12pt;
+    height: 30pt;
+    border: inset 3pt rgb(10, 10, 10);
+    transition: 0.5s;
+    color: rgb(0, 255, 255);
+}
+
+.InputPokemon:focus {
+    background-color: rgb(108, 218, 255);
+    color: rgb(0, 80, 80);
+    border: inset 3pt rgb(0, 255, 255);
+}
+
+.InputButton {
+    width: 20pt;
+    height: 20pt;
+    margin-top: 5pt;
+    background-color: rgb(56, 56, 56);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.InputButton:hover {
+    cursor:pointer;
+}
+
+.ImageContainer {
+    background-color: rgb(218, 218, 218);
+    width: 75%;
+    height: 300pt;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50pt;
+    border: 3pt grey;
+    border-style:outset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.RedButtonsContainer {
+    display: flex;
+    justify-content:space-around;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.RedButtonSmall {
+    margin-top: 5pt;
+    width: 12pt;
+    height: 12pt;
+    border-radius: 15pt;
+    background-color: rgb(104, 0, 0);
+    animation: GlowingButton linear infinite 4s;
+    border: rgb(59, 21, 21) solid 3pt;
+}
+
+.RedButton {
+    margin-top: 5pt;
+    width: 30pt;
+    height: 30pt;
+    border-radius: 30pt;
+    background-color: rgb(104, 0, 0);
+    animation: GlowingButton linear infinite 4s;
+    border: rgb(59, 21, 21) solid 3pt;
+}
+
+.BottomOfIMGC {
+    width: 75%;
+    height: 50pt;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.FunkyLines {
+    width:50%;
+    div {
+        border-bottom: rgb(41, 41, 41) 3pt solid;
+        height: 7pt;
+        width: 75%;
+    }
+}
+
+
+.Dpad {
+    margin-top: 50pt;
+    background: rgb(14, 14, 14);
+    height: 100pt;
+    position: relative;
+    width: 30pt;
+    box-shadow: 2pt 2pt rgb(0, 0, 0);
+    align-content: center;
+  }
+
+.Dpad:after {
+    background: rgb(14, 14, 14);
+    width: 100pt;
+    height: 30pt;
+    position: absolute;
+    content: "";
+    top:35pt;
+    left: -35pt;
+    box-shadow: 2pt 0pt rgb(0, 0, 0);
+}
+
+.Joystick_Dpad_Container {
+    width: 25%;
+}
+
+.Joystick {
+    width: 75pt;
+    height: 75pt;
+    border-radius: 75pt;
+    background-color: rgb(14, 14, 14);
+    box-shadow: 3pt 3pt rgb(0, 0, 0);
+    align-content: center;
+}
+
+.JoystickCenter {
+    width: 50pt;
+    height: 50pt;
+    border-radius: 50pt;
+    background-color: rgb(22, 22, 22);
+    border: solid 2pt rgb(32, 32, 32);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.BottomOfDex {
+    margin-top: 5pt;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.TextContainer {
+    font-family: Monospace;
+    font-size: 16pt;
+    word-wrap: break-word;
+    text-align: center;
+    margin-right: 30pt;
+    width: 60%;
+    height: 247pt;
+    background-color: rgb(74, 100, 41);
+    border: inset 3pt rgb(63, 85, 35);
+    color: rgb(161, 214, 91);
+}
+
+.DexName {
+    font-size: 22pt;
+    color: rgb(197, 255, 120);
+
+}
+
+.ToTheCenter {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 50%;
+    height: 150pt;
+    transition: 0.5s;
+    background-color: rgb(15, 15, 15);
+    border: inset 3pt rgb(10, 10, 10);
+}
+
+.ImageScreen {
+    background-color: rgb(0, 191, 255);
+    border: rgb(95, 197, 231) inset 3pt;
+}
+
+.PokeIMG {
+    width: 150pt;
+    height: 150pt;
+}
+
+.PokeIMGHidden {
+    display: none;
+}
+
+.TypeContainer {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.TypeBorder {
+    align-content: center;
+    width: 70pt;
+    border-radius: 20pt;
+    height: 30pt;
+    text-align: center;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    border: inset 3pt rgb(10, 10, 10);
+    transition: 0.5s;
+}
+
+.Hidden {
+    display: none;
+}
+
+.Normal {
+    background-color: var(--Normal);
+    border: inset 3pt var(--NormalD);
+}
+
+.Grass {
+    background-color: var(--Grass); 
+    border: inset 3pt var(--GrassD);
+}
+
+.Fire {
+    background-color: var(--Fire);
+    border: inset 3pt var(--FireD);
+}
+
+.Water {
+    background-color: var(--Water);
+    border: inset 3pt var(--WaterD);
+}
+
+.Fighting {
+    background-color: var(--Fighting);
+    border: inset 3pt var(--FightingD);
+}
+
+.Flying {
+    background-color: var(--Flying);
+    border: inset 3pt var(--FlyingD);
+}
+
+.Poison {
+    background-color: var(--Poison);
+    border: inset 3pt var(--PoisonD);
+}
+
+.Ground {
+    background-color: var(--Ground);
+    border: inset 3pt var(--GroundD);
+}
+
+.Rock {
+    background-color: var(--Rock);
+    border: inset 3pt var(--RockD);
+}
+
+.Bug {
+    background-color: var(--Bug);
+    border: inset 3pt var(--BugD);
+}
+
+.Ghost {
+    background-color: var(--Ghost);
+    border: inset 3pt var(--GhostD);
+}
+
+.Electric {
+    background-color: var(--Electric);
+    border: inset 3pt var(--ElectricD);
+}
+
+.Psychic {
+    background-color: var(--Psychic);
+    border: inset 3pt var(--PsychicD);
+}
+
+.Ice {
+    background-color: var(--Ice);
+    border: inset 3pt var(--IceD);
+}
+
+.Dragon {
+    background-color: var(--Dragon);
+    border: inset 3pt var(--DragonD);
+}
+
+.Dark {
+    background-color: var(--Dark);
+    border: inset 3pt var(--DarkD);
+}
+
+.Steel {
+    background-color: var(--Steel);
+    border: inset 3pt var(--SteelD);
+}
+
+.Fairy {
+    background-color: var(--Fairy);
+    border: inset 3pt var(--FairyD);
+}
+
+
+@keyframes GlowingButton {
+    0% {
+        background-color: rgb(104, 0, 0);
+    }
+
+    50% {
+        background-color: rgb(255, 0, 0);
+    }
+}
+

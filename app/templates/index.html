@@ -1,0 +1,38 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Pokedex</title>
+    <link rel="stylesheet" href="{% static "index.css" %}">
+    <link rel="icon" type="image/png" href="{% static 'images/pokeball.jpg' %}" />
+  </head>
+    <body class="Background">
+        <div class="PokedexBackground">
+            <div class="TopOfDex">
+                <div class="TopSize1"><div class="Camera"><div class="CameraShine"></div></div></div>
+                <div class="TopSize2"><div><input class="InputPokemon" placeholder="Pokemon Name Here!" id="InputPokemonName" value=""></div><button class="InputButton" onclick="GetPokemon()"><img width="20pt" height="20pt" src="{% static "images/WhiteSearch.png" %}"></button></div>
+            </div>
+            <div class="ImageContainer">
+                <div class="RedButtonsContainer"><div class="RedButtonSmall"></div><div class="RedButtonSmall"></div></div>
+                <div class="ToTheCenter" id="ImageScreen"><img id="PokemonImageDefault" class="PokeIMGHidden"></div>
+                <div class="TypeContainer"><div class="TypeBorder" id="Type1Container"><text id="Type1"></text></div><div class="TypeBorder" id="Type2Container"><text id="Type2"></text></div></div>
+                <div class="BottomOfIMGC">
+                    <div class="RedButton"></div>
+                    <div class="FunkyLines"><div></div><div></div><div></div><div></div></div>
+                </div>
+            </div>
+            <div class="BottomOfDex">
+                <div><div class="Joystick"><div class="JoystickCenter"></div></div></div>
+                <div class="TextContainer">
+                    <h2 class="DexName" id="DexNameJS"></h2>
+                    <p class="Dexription" id="DexriptionJS"></p>
+                </div>
+                <div><div class="Dpad"></div></div>
+            </div>
+        </div>
+    <script src="{% static "main.js" %}"></script>
+    </body>
+</html>
